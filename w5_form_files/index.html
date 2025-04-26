@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Javier" content="Javier Almeida">
+    <meta name="description" content="Default HTML Page for SE 111">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Week 5 | Tables and Forms</title>
+</head>
+<body>
+    <!--Build your Table and Form here-->
+    <h1>Birthday Party Registration Form</h1>
+
+    <form action="confirm.html" method="get">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Labels</th>
+                    <th>Form Fields</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Parent/Guardian Name -->
+                <tr>
+                    <td>Parent/Guardian Name</td>
+                    <td>
+                        <input type="text" name="parentFirstName" placeholder="First Name" required>
+                        <input type="text" name="parentLastName" placeholder="Last Name" required>
+                    </td>
+                </tr>
+                <!-- Child's First Name -->
+                <tr>
+                    <td>Child's First Name</td>
+                    <td>
+                        <input type="text" name="childFirstName" placeholder="Child's First Name" required>
+                    </td>
+                </tr>
+                <!-- Child's Age -->
+                <tr>
+                    <td>Child's Age</td>
+                    <td>
+                        <input type="number" name="childAge" min="0" required>
+                    </td>
+                </tr>
+
+                <!-- Date and Time Section Title -->
+                <tr>
+                    <td colspan="2"><strong>Date and Time</strong></td>
+                </tr>
+                <!-- Date -->
+                <tr>
+                    <td>Date</td>
+                    <td>
+                        <input type="date" name="partyDate" required>
+                    </td>
+                </tr>
+                <!-- Start Time -->
+                <tr>
+                    <td>Start Time</td>
+                    <td>
+                        <input type="time" name="startTime" required>
+                    </td>
+                </tr>
+                <!-- Number of Guests -->
+                <tr>
+                    <td>Number of Guests</td>
+                    <td>
+                        <input type="number" name="numberOfGuests" min="1" required>
+                    </td>
+                </tr>
+
+                <!-- Food Section Title -->
+                <tr>
+                    <td colspan="2"><strong>Food</strong></td>
+                </tr>
+                <!-- Size -->
+                <tr>
+                    <td>Size</td>
+                    <td>
+                        <input type="radio" name="size" value="sm" required> sm
+                        <input type="radio" name="size" value="med"> med
+                        <input type="radio" name="size" value="lg"> lg
+                    </td>
+                </tr>
+                <!-- Drinks -->
+                <tr>
+                    <td>Drinks</td>
+                    <td>
+                        <input type="checkbox" name="drinks" value="Coke"> Coke<br>
+                        <input type="checkbox" name="drinks" value="Sprite"> Sprite<br>
+                        <input type="checkbox" name="drinks" value="Fruit Punch"> fruit punch<br>
+                        <input type="checkbox" name="drinks" value="Lemonade"> lemonade<br>
+                        <input type="checkbox" name="drinks" value="Iced Tea"> Iced Tea
+                    </td>
+                </tr>
+                <!-- Cake -->
+                <tr>
+                    <td>Cake</td>
+                    <td>
+                        <select name="cake" required>
+                            <option value="">Select Cake</option>
+                            <option value="Chocolate">Chocolate</option>
+                            <option value="Vanilla">Vanilla</option>
+                            <option value="Strawberry">Strawberry</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Decorations Section Title -->
+                <tr>
+                    <td colspan="2"><strong>Decorations</strong></td>
+                </tr>
+                <!-- Color Scheme -->
+                <tr>
+                    <td>Color Scheme</td>
+                    <td>
+                        <input type="color" name="colorScheme">
+                    </td>
+                </tr>
+                <!-- Additional Comments -->
+                <tr>
+                    <td>Additional Comments</td>
+                    <td>
+                        <textarea name="additionalComments" placeholder="Please add any additional comments"></textarea>
+                    </td>
+                </tr>
+
+                <!-- Submit Button -->
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="submit">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
