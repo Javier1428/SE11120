@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Week 6 | JavaScript Lab</title>
+
+    </head>
+<body>
+    <h1>Week 6 | JavaScript Lab</h1>
+    <p></p>
+    <button>Click Me!</button>
+    <script>
+         //Example of a single line comment
+         /*
+         This is an an examle of a mutli-line commnt
+         */
+
+         //example of variable
+         var firstName = "Javier";
+         var firstName = "Almeida";
+
+         //var fullNAme = firstName + " " + lastName;
+         var fullNAme = `${firstName} ${lastName}`;
+         //alert(fullNAme);
+         console.log(fullName);
+
+         //Example of a Java Script Function.
+         function outputMessage(){
+            document.querySelector("p").innerHTML = "I need a Million dollars.";
+            document.querySelector("p").style.color = "red";
+        }
+
+        //outputMessage("h1", "Wouldn't you like to be a pepper too", "#00ff00");
+        outputMessage("p", "I need a Million Dollars", "#00ff00");
+
+        //firstName = prompt("Please enter your name.");
+        //console.log(firstName);
+
+        var promptButton = document.querySelector("button");
+
+        promptButton.addEventListener("click", dataPrompt);
+
+        function dataPrompt(){
+            alert(`Hello my name is ${firstName}. Welcome to my program!`);
+            var yourName = prompt("What is your name?");
+            alert(`Hello ${yourName}. Nice to meet you.`);
+            var yourLastName = prompt("Please tell me yor last name.");
+            alert(`Your full name is ${yourName} ${yourLastName}`);
+
+            let firstNumber = prompt("Please give me your first number.");
+            let secondNumber = prompt("Please give me your second number.");
+
+            let result = Number(firstNumber) * Number(secondNumber);
+
+            alert(`This is your result: ${result}`);
+
+            //Exmaple of JavaScript creating new elements on a webpage
+            let documentBody = document.querySelector("body");
+            var outputElement = document.createElement("p");
+
+            var ouputData = `Your name is ${yourName} ${yourLastName}
+            \nThe result f your number is ${result}
+            \nThank you,
+            \n ${fullName}`;
+            var outputHTML = Your name is ${yourName} ${yourLastName}
+            <br>The result if your number is ${result}
+            <br>Thank you,
+            <br>${fullName}`;
+            console.log{outputData}
+            outputElement.innerHTML = outputData;
+            documentBody.appendChild(outputElement);
+        }
+     </script>
+   </body>
+</html>
