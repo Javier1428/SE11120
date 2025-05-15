@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Week8 Lab \ Collections and loops</title>
+</head>
+
+<body>
+    <h1>Week 8 Collections and loops</h1>
+    <p>Click ME</p>
+    <script>
+        var pTag = document.querySelector("p");
+
+        var currentState = false;
+
+        ///    pTag.addEventListener("click", function(e){
+
+        ///        if(currentState === false){
+        ///            console.log("Hi");
+        ///            currentState = true;
+        ///            pTag.innerHTML = "Hi!";
+        ///        }
+        ///   else{
+        ///      console.log("Bye");
+        ///      currentState = false;
+        ///       pTag.innerHTML = "Bye!";
+        ///    }
+
+        /// });
+        var currentState = 0;
+
+        var states = [];
+
+        states[0] = function () {
+            console.log("Hi");
+            currentState = 1;
+            pTag.innerHTML = "Hi!";
+        }
+
+        state[1] = function () {
+            console.log("Bye");
+            currentState = 0;
+            pTag.innerHTML = "Bye!";
+        }
+
+        pTag.addEventListener("click, ffunction(e){
+            states[currentState]();
+        })
+
+        //Simple Tck Paper Scissors game using collections
+
+        var choices = ["rock", "paper", "scissors"];
+        // var playerChoice = Number(prompt(`What number do you pick?\n0: Rock\n1: Paper\n2: Scissors`));
+        var computerChoice = Math.floor(Math.random() * 2.9);
+
+        var outcomes = [
+            ["ties", "loses", "wins"],
+            ["wins", "ties", "loses"],
+            ["loses", "wins", "ties"]
+        ];
+        // alerrt(`Player picked ${choices[playersChoice]} and the Computer picked ${choices[computerChoice]}`);
+        // alert(`Player ${outcomes[playerChoice][computerChoice]}`);
+
+        var name = "Javier"
+        console.log(name[3]);
+
+        name - name.yoUpperCase();
+        console.log(name);
+
+        var subnet = `255.255.255.0`;
+        var ip = `24.91.221.3`;
+
+        var sbnOctects = subnet.split(".");
+        var ipOctects = ip.split(".");
+
+        function getParts(_sub, _ip, _netOrClient) {
+            var network = ``;
+
+            if (_sub[0] === _netOrClient) {
+                network += _ip[0] + ".";
+            }
+            if (_sub[1] === _netOrClient) {
+                network += _ip[1] + ".";
+            }
+            if (_sub[2] === _netOrClient) {
+                network += _ip[2] + ".";
+            }
+            if (_sub[3] === _netOrClient) {
+                network += _ip[3] + ".";
+            }
+
+            return network.substring(0, network.length - 1);
+
+        }
+
+        var network = getParts(sbnOctects, ipOctects, `255`);
+        var host = getParts(subetOctects, ipOctects, `0`);
+
+        console.log(`Network: ${network}`);
+        console.log(`Host: ${host}`);
+
+        var person = {
+            firstNAme: "Javier",
+            lastName: "Almeida",
+            ag: 33,
+            sayName: function () {
+                reutrn`Hi my name is ${this.firstName} ${this.lastName}`
+            }
+        }
+        console.log(person.firstName, person.lastName, person.age);
+        console.log(person.sayName());
+
+        for (var i = 0; i < person.firstName.length; i++) {
+            console.log(person.firstName[i]);
+        }
+
+    </script>
+</body>
+
+</html>
